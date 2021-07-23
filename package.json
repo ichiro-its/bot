@@ -1,0 +1,18 @@
+{
+  "name": "bot",
+  "version": "0.1.0",
+  "author": "Alfi Maulana <alfi.maulana.f@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ichiro-its/bot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ichiro-its/bot/issues"
+  },
+  "homepage": "https://github.com/ichiro-its/bot#readme"
+}
