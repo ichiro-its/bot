@@ -5,6 +5,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
+    "build": "echo \"Skip, no build specified\"",
     "test": "echo \"Skip, no test specified\""
   },
   "repository": {
