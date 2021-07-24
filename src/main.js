@@ -23,6 +23,21 @@ client
         console.warn(`Unable to get the app info! ${err.message}`);
       });
   })
+  .on("message", (message) => {
+    if (message.author.id === client.user.id) {
+      return;
+    }
+
+    const mentioned = message.mentions.users.some((user) => user.id === client.user.id);
+    if (mentioned) {
+      // Remove bot mention text.
+      const filteredContent = message.content.replace(`<@!${client.user.id}>`, '');
+      console.debug(`Received '${filteredContent}' from ${message.author.username}!`);
+
+      // Echo the message back
+      message.channel.send(`${message.author} ${filteredContent}`);
+    }
+  })
   .login(botToken)
   .catch((err) => {
     console.error(`Failed to login the bot! ${err.message}`);
