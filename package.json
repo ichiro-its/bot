@@ -5,6 +5,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
+    "start": "node ./src/main.js",
     "build": "echo \"Skip, no build specified\"",
     "test": "echo \"Skip, no test specified\""
   },
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/ichiro-its/bot/issues"
   },
-  "homepage": "https://github.com/ichiro-its/bot#readme"
+  "homepage": "https://github.com/ichiro-its/bot#readme",
+  "dependencies": {
+    "discord.js": "^12.5.3"
+  }
 }
