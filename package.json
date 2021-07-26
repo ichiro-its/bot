@@ -20,6 +20,7 @@
   "homepage": "https://github.com/ichiro-its/bot#readme",
   "dependencies": {
     "discord.js": "^12.5.3",
+    "dotenv": "^10.0.0",
     "ts-node": "^10.1.0"
   },
   "devDependencies": {

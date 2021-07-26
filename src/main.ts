@@ -1,4 +1,7 @@
 import * as Discord from "discord.js";
+import * as Dotenv from "dotenv";
+
+Dotenv.config();
 
 const botToken = process.env.BOT_TOKEN;
 
